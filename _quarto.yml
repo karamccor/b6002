@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "b6002"
+  title: "BIOS 600: Intro to Probability and Statistical Inference"
   navbar:
     left:
       - href: index.qmd
