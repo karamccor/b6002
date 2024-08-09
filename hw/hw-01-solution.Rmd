@@ -1,0 +1,116 @@
+---
+title: HW 01
+---
+#### BIOS 600 Fall 2024 
+#### Due: Friday, August 23 at 11:59p
+#### Name: YOUR NAME GOES HERE
+
+<br><br>
+
+#### Exercise 1:
+
+This study would be considered observational rather than experimental. In an observational study, researchers observe and measure outcomes without manipulating the variables or assigning participants to different conditions. In this case, the researchers observed the eating behaviors and caloric intake of patients with different types of dementia without assigning them to any specific group or intervening in their behavior. The different patient types (without dementia, with AD, semantic dementia, and bvFTD) were pre-existing, and the researchers simply observed the outcomes.
+
+#### Exercise 2:
+
+Around 750 calories. This is based on the center line in the box. 
+
+#### Exercise 3: 
+
+Patients with behavioral-variant frontal temporal dementia (bvFTD) had the largest IQR. You can see this in the boxplot since the box is the largest. 
+
+- IQR: about 1600 - 1000 = 600 calories
+- first quartile: 1000 calories
+- third quartile: about 1600 calories
+
+Side note about how to read boxplots: The distance between Q3 and Q1 is known as the interquartile range (IQR) and plays a major part in how long the whiskers extending from the box are. Each whisker extends to the furthest data point in each wing that is within 1.5 times the IQR. Any data point further than that distance is considered an outlier, and is marked with a dot.
+
+#### Exercise 4: 
+
+Right-skewed, because the top whisker extends much farther than the lower whisker, indicating that most of the values are centered around a lower value.
+
+#### Exercise 5: 
+
+Lower HDIs are associated with higher prevalence of MSVI (indicated by the downward pattern of the points in the scatterplot).
+
+#### Exercise 6: 
+
+Nigeria has the lowest HDI (about 0.5). 
+
+#### Exercise 7: 
+
+India has higher prevelance of MSVI than might be expected given its HDI. We can tell because the point for India is so much higher (on the y-axis, aka the MSVI axis) than the general trend of the points. 
+
+#### Exercise 8: 
+
+This is reasonable, there is a quite clear downward trend between HDI and MSVI. 
+
+#### Exercise 9: 
+
+- age: continuous
+- race: nominal
+- body-mass index: continuous
+- eosinophil count: continuous
+
+#### Exercise 10:
+
+With an experimental study, researchers can make causal statements about the results. There's more control over confounding variables, and experimental studies can be easily replicated because the conditions are controlled or standardized. 
+
+#### Exercise 11: 
+
+The authors could make a grouped box-plot. One box per group.
+
+#### Exercise 12: 
+
+A scatterplot would be useful.
+
+#### Exercise 13: 
+
+They could color the points according to the treatment group. 
+
+#### Exercise 14: 
+
+The probability that a randomly selected individual is assigned to placebo:
+407/1204
+
+#### Exercise 15: 
+
+The probability that a randomly selected individual is male:
+
+(138 + 124 + 146) /1204 = 408/1204
+
+#### Exercise 16: 
+
+p(placebo) + p(male) - p(placebo and male)
+407/1204 + 408/1204 - 138/1204 = 677/1204
+
+#### Exercise 17: 
+
+Placebo and male
+
+138/1204
+
+#### Exercise 18: 
+
+Asian or not assigned to placebo
+
+p(asian) + p(not placebo) - p(asian and not placebo)
+
+(50+54+50)/1204 + (399+398)/1204 - (54+50)/1204
+= 847/1204
+
+#### Exercise 19: 
+
+The formula to find the probability that an individual is white or male:
+
+p(white) + p(male) - p(white and male)
+
+We have p(white) and p(male) but we need p(white and male). 
+
+#### Exercise 20: 
+
+- Scope: Reproducibility is more about verifying the correctness of the original analysis, while replicability is about testing the robustness of the findings across different settings.
+
+- Conditions: Reproducibility uses the same data and methods, whereas replicability often involves different data, samples, or methods.
+
+- Focus: Reproducibility focuses on the precision and accuracy of the original study, while replicability focuses on the generalizability and reliability of the results across different scenarios.
