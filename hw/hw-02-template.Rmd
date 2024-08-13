@@ -1,0 +1,89 @@
+---
+title: HW 02
+---
+#### BIOS 600 Fall 2024
+#### Due:  at 11:59p
+#### Name: YOUR NAME GOES HERE
+
+<br><br>
+
+#### Exercise 1:
+
+```{r, ex-1}
+# You may do a calculation here, for instance, as follows:
+
+1+1
+
+# Any R code preceded by a pound sign (#) is a comment, and is not evaluated. Delete any R Comments before knitting your document!
+```
+
+#### Exercise 2:
+
+```{r, ex-2}
+# You may do a calculation here, for instance, as follows:
+
+(0.25*0.25)^3/(1 + 3)
+
+# Don't forget to delete comments!
+```
+
+#### Exercise 3:
+
+```{r, ex-3}
+
+```
+
+#### Exercise 4:
+
+In `R` markdown documents, we may also directly write narratives explaining our answers. In this space, explain why $A$ and $B$ are, or are not, independent events.
+
+#### Exercise 5:
+
+Do Exercise 5 here. Feel free to write out any numerical calculations you are using. In doing so, set numerical expression in your narrative using backticks. For instance, `(0.3)*(0.4) = 0.12`.
+
+#### Exercise 6:
+
+Do Exercise 6 here. Feel free to write out any numerical calculations you are using, setting them apart using backticks in order to draw attention to them. For instance, `(0.1 * 0.2)/(0.4*0.6 + (1-0.4)*0.3)`. When displaying your final answer, use an `R` chunk to evaluate the answer:
+
+```{r, ex-6}
+
+```
+
+#### Exercise 7:
+
+Do Exercise 7 here. Use the narrative space to explain your work. For example, `P(A) = 0.5` (note that the previous expression was set apart using backticks). To have `R` evaluate a numeric term, create an `R` chunk as in the template above. Be sure to give it a meaningful name!
+
+#### Exercise 8:
+
+...and so on.
+
+#### Exercise 9:
+
+#### Exercise 10:
+
+#### Exercise 11:
+
+#### Exercise 12:
+
+#### Exercise 13:
+
+#### Exercise 14:
+
+#### Exercise 15:
+
+```{r, ex-15-load-data}
+# Load your data here using the code in the homework. Don't forget to delete this comment!
+```
+
+```{r, ex-15-packages, message = FALSE, warning = FALSE}
+# Loading in tidyverse package...
+library(tidyverse)
+```
+
+```{r, ex-15-histogram}
+# Create your histogram using ggplot here. Do not use base R graphics.
+```
+
+Write your narrative here!
+
+#### Exercise 16:

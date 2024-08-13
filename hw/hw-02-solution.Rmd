@@ -1,0 +1,219 @@
+---
+title: HW 02
+---
+#### BIOS 600 Fall 2024
+#### Due:  at 11:59p
+#### Name: YOUR NAME GOES HERE
+
+<br><br>
+
+#### Exercise 1:
+
+```{r, ex-1}
+(1/8)*(1/8)*(1/8)
+
+```
+
+#### Exercise 2:
+
+```{r, ex-2}
+(7/8)^3
+```
+
+#### Exercise 3:
+
+P(at least one develops breast cancer (BC)) = 
+1- P(none develop breast cancer)
+```{r, ex-3}
+1-(7/8)*(7/8)*(7/8)
+```
+
+#### Exercise 4:
+
+$A$ = woman develops breast cancer
+$B$ = woman has positive family history of breast cancer
+
+These are not independent because the presence of $B$ can affect the presence of $A$.
+
+#### Exercise 5:
+
+Do Exercise 5 here. Feel free to write out any numerical calculations you are using. In doing so, set numerical expression in your narrative using backticks. For instance, `(0.3)*(0.4) = 0.12`.
+
+$A$ = older sibling has chicken pox
+$B$ = younger sibling has chicken pox
+
+Two events are considered independent if 
+
+$$P(A \cap B) = P(A) \times P(B)$$
+$A$ and $B$ are not independent, because we have that $P(A) \times P(B)$ = `(0.5)*(0.5) = 0.25`, which is less than 0.35 in the data. This makes sense, because if one sibling has chicken pox, it may be more probable that the other sibling gets chicken pox, since we might assume they are sharing space in a home.
+
+
+#### Exercise 6:
+
+Do Exercise 6 here. Feel free to write out any numerical calculations you are using, setting them apart using backticks in order to draw attention to them. For instance, `(0.1 * 0.2)/(0.4*0.6 + (1-0.4)*0.3)`. When displaying your final answer, use an `R` chunk to evaluate the answer:
+
+We want to find $P(B|A) = \frac{P(A \cap B)}{P(B)}$
+
+$P(A) = .5$
+$P(B) = .5$
+$P(A \cap B) = .35$
+
+So we have that the answer is `(.35)/(.5)`.
+
+```{r, ex-6}
+.35/.5
+```
+
+#### Exercise 7:
+
+We just calcuated that `P(B|A) = 0.70`.
+
+$P(B^C | A) = 1 - P(B|A)$
+
+So, the answer is `1-0.70`.
+```{r, ex-7}
+1-0.70
+```
+
+
+#### Exercise 8:
+
+We want to find
+
+$P(B | A^C)$
+
+We know that `P(A^C) = 1-P(A) = 1-0.5 = 0.5`
+
+Now, we use the law of total probability.
+
+$P(B) = P(B \cap A) + P(B \cap A^C)$
+
+So we have that $0.5 = 0.35 + P(B \cap A^C)$ and 
+$P(B \cap A^C) = 0.5 - 0.35 = 0.15$
+
+Now, we apply Bayes' Rule to find $P(B | A^C)$.
+
+$P(B | A^C) = \frac{P(B \cap A^C)}{P(A^C)}$
+
+= `0.15/0.5`
+
+```{r, ex-8}
+0.15/0.5
+```
+
+
+
+#### Exercise 9:
+
+$S$ = severe WFNS score
+$B$ = bad outcome at one year mark
+
+(10 + 30)/100 = 40/100
+```{r}
+40/100
+```
+
+
+#### Exercise 10:
+Sensitivity = true positive rate = $P(S|B)$. 
+
+Using Bayes' rule, we have $P(S|B) = \frac{P(B|S)P(S)}{P(B)}$
+
+Now,
+
+- P(bad outcome | severe score) = 30/40
+- P(severe score) = 40/100
+- P(bad outcome) = 40/100
+
+So, $P(S|B)$ = `[(30/40)*(40/100)] / (40/100)`, which simplifies to
+
+```{r}
+30/40
+```
+
+
+#### Exercise 11:
+
+Specificity refers to the probability that a patient with a "good outcome" does not have a severe WFNS score. Mathematically, it is the probability that a patient has a non-severe WFNS score given that they have a good outcome: P(Non-Severe WFNS∣Good Outcome)P(Non-Severe WFNS∣Good Outcome)
+
+So, we want: $P(\text{non-severe score}| \text{good outcome} ) = \frac{P(\text{good outcome} | \text{non-severe score})P(\text{non-severe score})}{P(\text{good outcome})}$
+
+- P(good outcome | non-severe score) = 50/60
+- P(non-severe score)= 60/100
+- P(good outcome) = 60/100
+
+This simplifies to `(50/60)*(60/100)/(60/100) = 50/60`
+
+```{r, ex-11}
+50/60
+```
+
+Using Bayes' Rule, we find that the specificity, or the probability that a patient with a good outcome has a non-severe WFNS score, is approximately 0.833, or 83.3%. This indicates that the WFNS score is fairly specific for identifying patients who will have a good outcome.
+
+#### Exercise 12:
+
+To calculate the Negative Predictive Value (NPV) of "high NDKA" as a diagnostic for bad outcomes, we first need to clarify that NPV is the probability that a patient does not have a bad outcome given that their NDKA level is low (i.e., the test result is negative).
+Given Information:
+
+- Sensitivity (True Positive Rate): 20% (P(High NDKA∣Bad Outcome)=0.2P(High NDKA∣Bad Outcome)=0.2)
+- Specificity (True Negative Rate): 90% (P(Low NDKA∣Good Outcome)=0.9P(Low NDKA∣Good Outcome)=0.9)
+- Prevalence (P(Bad Outcome)): Not directly given, so we'll assume it based on earlier data, where the prevalence was 40% (from the initial 100 patients, 40 had a bad outcome).
+
+Negative Predictive Value = P(good outcome | Low NDKA)
+
+Using Bayes' rule, this can be re-written as: [P(low NDKA | good outcome) * P(good outcome)] / P(low NDKA)
+
+P(low NDKA) = P(low NDKA | good)P(good) + P(low NDKA | bad) P(bad)
+
+- P(low NDKA | good) = specificity = 0.9 (given)
+- P(low NDKA | bad ) = 1- sensitivity = 1- P(B | A) = 1 - .20 = 0.80
+    - This is by the law of total probability, which states that P(B|A) + P(B^C | A) = 1
+    
+- P(good outcome) = 0.60 from the question description
+- P(bad outcome) = 0.40 from exercise 9
+
+P(low NDKA) = `(0.90)*(0.60)+ (0.80)(0.40) = 0.86`
+
+```{r}
+(0.90)*(0.60)+ (0.80)*(0.40)
+```
+
+Then, the NPV is [P(low NDKA | good)P(good)]/P(low NDKA)
+
+=
+```{r}
+(0.90)*(0.60)/0.86
+```
+
+The negative predictive value (NPV) of using "high NDKA" as a diagnostic for bad outcomes is approximately 0.628, or 62.8%. This means that if a patient has a low NDKA level, there is a 62.8% chance that they will not experience a bad outcome at the one-year mark.
+
+#### Exercise 13:
+
+If we are willing to accept a false positive rate of at most 10%, that means that we are willing to accept a Specificity as low as 90%, since False Positive Rate = 1 - specificity. The true positive rate is also known as the specificity. So, if we look at 90% on the x-axis, the corresponding specificity (or TPR) on the y-axis is about .35. So, we can attain aboug 35% true positive rate with that stipulation. 
+
+Note: The ROC curve represents the trade-off between sensitivity (TPR) and specificity (related to FPR). Higher TPR values are better, but they usually come at the cost of increasing FPR, depending on the threshold set by the classifier.
+
+#### Exercise 14:
+
+We would rather use S100$\beta$, because the sensitivity levels are consistently higher compared to NDKA given a certain level of specificity.
+
+#### Exercise 15:
+
+```{r, ex-15-load-data}
+cdc <- read.csv("https://www2.stat.duke.edu/courses/Spring20/sta102.001/labs/data/cdc_cleaned.csv")
+
+write.csv(cdc, "/Users/karamccormack/unc_teaching/fall2024/b6002/docs/labs/data/cdc_cleaned.csv")
+```
+
+```{r, ex-15-packages, message = FALSE, warning = FALSE}
+# Loading in tidyverse package...
+library(tidyverse)
+```
+
+```{r, ex-15-histogram}
+# Create your histogram using ggplot here. Do not use base R graphics.
+```
+
+Write your narrative here!
+
+#### Exercise 16:
