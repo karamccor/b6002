@@ -200,9 +200,7 @@ We would rather use S100$\beta$, because the sensitivity levels are consistently
 #### Exercise 15:
 
 ```{r, ex-15-load-data}
-cdc <- read.csv("https://www2.stat.duke.edu/courses/Spring20/sta102.001/labs/data/cdc_cleaned.csv")
-
-write.csv(cdc, "/Users/karamccormack/unc_teaching/fall2024/b6002/docs/labs/data/cdc_cleaned.csv")
+cdc <- read.csv("https://karamccor.github.io/b6002/labs/data/cdc_cleaned.csv")
 ```
 
 ```{r, ex-15-packages, message = FALSE, warning = FALSE}
@@ -211,9 +209,29 @@ library(tidyverse)
 ```
 
 ```{r, ex-15-histogram}
-# Create your histogram using ggplot here. Do not use base R graphics.
+glimpse(cdc)
+
+ggplot(data = cdc, mapping = aes(x = Seatbelt)) + 
+  geom_histogram(bins = 5) +
+  ggtitle("Histogram of percent of adults in each US state who wear seatbelts") +
+  xlab("Percent") +
+  ylab("Count")
 ```
 
-Write your narrative here!
+The distribution looks nearly normally distributed, with some left skew. 
 
 #### Exercise 16:
+
+Create side-by-side boxplots examining the distribution of infant mortality rate by HDI. Comment on what you see. Be sure to provide a title and meaningful axis labels.
+
+```{r, ex-16}
+ggplot(data = cdc, 
+       mapping = aes(x = HDI, 
+                     y = InfantMortalityRate)) +
+  geom_boxplot() + 
+  ggtitle("Infant Mortality Rate by HDI") +
+  xlab("Human Development Index (HDI)") +
+  ylab("Infant Mortality Rate (%)")
+```
+
+For areas with higher HDI, the infant mortality rate tends to be lower. (Or, for lower HDI, the infant mortality rate tends to be higher). 
