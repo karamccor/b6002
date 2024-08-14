@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="YOUR NAME HERE">
+<meta name="dcterms.date" content="2024-08-08">
 
-<title>BIOS 600: Intro to Probability and Statistical Inference - HW 02</title>
+<title>BIOS 600: Intro to Probability and Statistical Inference - template_test</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,59 +22,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -94,10 +62,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -107,7 +73,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">BIOS 600: Intro to Probability and Statistical Inference</span>
     </a>
   </div>
@@ -118,11 +84,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html" rel="" target="">
+    <a class="nav-link" href="../../index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../about.html" rel="" target="">
+    <a class="nav-link" href="../../about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -137,21 +103,40 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#hello" id="toc-hello" class="nav-link active" data-scroll-target="#hello">hello</a></li>
+  <li><a href="#como-estas" id="toc-como-estas" class="nav-link" data-scroll-target="#como-estas">como estas</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">HW 02</h1>
+<h1 class="title">template_test</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>YOUR NAME HERE </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">August 8, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -159,97 +144,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<section id="bios-600-fall-2024" class="level4">
-<h4 class="anchored" data-anchor-id="bios-600-fall-2024">BIOS 600 Fall 2024</h4>
+<section id="hello" class="level2">
+<h2 class="anchored" data-anchor-id="hello">hello</h2>
+<p>hola</p>
 </section>
-<section id="due-at-1159p" class="level4">
-<h4 class="anchored" data-anchor-id="due-at-1159p">Due: at 11:59p</h4>
-</section>
-<section id="name-your-name-goes-here" class="level4">
-<h4 class="anchored" data-anchor-id="name-your-name-goes-here">Name: YOUR NAME GOES HERE</h4>
-<p><br><br></p>
-</section>
-<section id="exercise-1" class="level4">
-<h4 class="anchored" data-anchor-id="exercise-1">Exercise 1:</h4>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># You may do a calculation here, for instance, as follows:</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span><span class="sc">+</span><span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Any R code preceded by a pound sign (#) is a comment, and is not evaluated. Delete any R Comments before knitting your document!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="exercise-2" class="level4">
-<h4 class="anchored" data-anchor-id="exercise-2">Exercise 2:</h4>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># You may do a calculation here, for instance, as follows:</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>(<span class="fl">0.25</span><span class="sc">*</span><span class="fl">0.25</span>)<span class="sc">^</span><span class="dv">3</span><span class="sc">/</span>(<span class="dv">1</span> <span class="sc">+</span> <span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 6.103516e-05</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Don't forget to delete comments!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</section>
-<section id="exercise-3" class="level4">
-<h4 class="anchored" data-anchor-id="exercise-3">Exercise 3:</h4>
-</section>
-<section id="exercise-4" class="level4">
-<h4 class="anchored" data-anchor-id="exercise-4">Exercise 4:</h4>
-<p>In <code>R</code> markdown documents, we may also directly write narratives explaining our answers. In this space, explain why <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span> are, or are not, independent events.</p>
-</section>
-<section id="exercise-5" class="level4">
-<h4 class="anchored" data-anchor-id="exercise-5">Exercise 5:</h4>
-<p>Do Exercise 5 here. Feel free to write out any numerical calculations you are using. In doing so, set numerical expression in your narrative using backticks. For instance, <code>(0.3)*(0.4) = 0.12</code>.</p>
-</section>
-<section id="exercise-6" class="level4">
-<h4 class="anchored" data-anchor-id="exercise-6">Exercise 6:</h4>
-<p>Do Exercise 6 here. Feel free to write out any numerical calculations you are using, setting them apart using backticks in order to draw attention to them. For instance, <code>(0.1 * 0.2)/(0.4*0.6 + (1-0.4)*0.3)</code>. When displaying your final answer, use an <code>R</code> chunk to evaluate the answer:</p>
-</section>
-<section id="exercise-7" class="level4">
-<h4 class="anchored" data-anchor-id="exercise-7">Exercise 7:</h4>
-<p>Do Exercise 7 here. Use the narrative space to explain your work. For example, <code>P(A) = 0.5</code> (note that the previous expression was set apart using backticks). To have <code>R</code> evaluate a numeric term, create an <code>R</code> chunk as in the template above. Be sure to give it a meaningful name!</p>
-</section>
-<section id="exercise-8" class="level4">
-<h4 class="anchored" data-anchor-id="exercise-8">Exercise 8:</h4>
-<p>…and so on.</p>
-</section>
-<section id="exercise-9" class="level4">
-<h4 class="anchored" data-anchor-id="exercise-9">Exercise 9:</h4>
-</section>
-<section id="exercise-10" class="level4">
-<h4 class="anchored" data-anchor-id="exercise-10">Exercise 10:</h4>
-</section>
-<section id="exercise-11" class="level4">
-<h4 class="anchored" data-anchor-id="exercise-11">Exercise 11:</h4>
-</section>
-<section id="exercise-12" class="level4">
-<h4 class="anchored" data-anchor-id="exercise-12">Exercise 12:</h4>
-</section>
-<section id="exercise-13" class="level4">
-<h4 class="anchored" data-anchor-id="exercise-13">Exercise 13:</h4>
-</section>
-<section id="exercise-14" class="level4">
-<h4 class="anchored" data-anchor-id="exercise-14">Exercise 14:</h4>
-</section>
-<section id="exercise-15" class="level4">
-<h4 class="anchored" data-anchor-id="exercise-15">Exercise 15:</h4>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load your data here using the code in the homework. Don't forget to delete this comment!</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Loading in tidyverse package...</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create your histogram using ggplot here. Do not use base R graphics.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Write your narrative here!</p>
-</section>
-<section id="exercise-16" class="level4">
-<h4 class="anchored" data-anchor-id="exercise-16">Exercise 16:</h4>
+<section id="como-estas" class="level2">
+<h2 class="anchored" data-anchor-id="como-estas">como estas</h2>
+<p>muy bien</p>
 
 
 </section>

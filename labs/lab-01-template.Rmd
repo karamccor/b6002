@@ -1,0 +1,65 @@
+---
+title: Lab 01
+author: YOUR NAME GOES HERE
+date: "Due: Friday, August 23, 2024 at 11:59PM"
+output:
+  html_document
+---
+
+```{r data-and-packages, warning = F, message = F}
+
+# You may need to install the tidyverse packages, which you can do by running
+# the following line of code in the Console:
+
+# install.packages("tidyverse")
+
+library(tidyverse)
+
+cdc <- read.csv("https://karamccor.github.io/b6002/labs/data/cdc_cleaned.csv")
+```
+
+#### Exercise 1
+
+Write your answer to Exercise 1 here.
+
+#### Exercise 2
+
+```{r ex-2}
+# Use this R chunk to create your visualization for Exercise 2.
+```
+
+#### Exercise 3
+
+```{r ex-3}
+# Use this R chunk to create your visualization for Exercise 3.
+```
+
+Describe the distribution in Exercise 3 here. Make sure you include spaces 
+between the R chunks, narrative paragraphs, and headers.
+
+#### Exercise 4
+
+```{r ex-4}
+# Use this R chunk to create your visualization for Exercise 4.
+```
+
+Use this space to write your answer to Exercise 4.
+
+#### Exercise 5
+
+```{r ex-5}
+# ...and so on.
+```
+
+Narrative for Exercise 5 goes here.
+
+#### Exercise 6
+
+```{r ex-6}
+
+```
+
+Remember to knit your lab into an .html file and then save it as a .pdf in a 
+web browser.
+
+**Important:** You must turn in a .pdf file corresponding to the R Markdown template to Sakai in order to receive credit for the labs and homework assignments.
