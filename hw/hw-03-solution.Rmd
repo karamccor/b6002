@@ -1,0 +1,82 @@
+---
+title: HW 03
+author: YOUR NAME GOES HERE
+date: "Due:  at 11:59PM"
+output:
+  html_document
+---
+
+#### Exercise 1
+
+- (A) The mean proportion of people who are left-handed: normal
+- (B) The number of students in a classroom who have diabetes: Binomial
+- (C) How many previous heart attacks a patient has had in the past decade: Poisson
+- (D) The number of flights taken by a person in a year
+- (E) The average weight of newborn infants: normal
+- (F) Whether a patient develops lung cancer during their life given that they are a smoker: binomial
+
+#### Exercise 2
+
+Verifying the assumptions for the binomial distribution:
+
+- Fixed Number of Trials:
+  - The binomial distribution models the number of successes (e.g., abnormal mice) in a fixed number of independent trials. In this case, the number of trials (number of mice sampled) is not fixed, because the researcher is interested in continuing until 10 abnormal mice are found. This suggests that the scenario might be more appropriately modeled by a negative binomial distribution, which is used when the number of trials is not fixed, but instead, the experiment continues until a certain number of successes are observed.
+
+
+- Independence
+  - The outcome of one trial (whether a mouse develops deficiencies) must be independent of the outcomes of other trials. If the mice are all exposed to the same conditions independently, this assumption could be satisfied. However, if there are interactions or dependencies between the mice (e.g., one mouse's health affects another), this assumption might be violated.
+  
+- Constant Probability of Success
+  - The probability of a mouse developing lung deficiencies (25 out of 100, or 0.25) is assumed to be constant across trials. This assumption might hold if the experimental conditions are consistent, and there is no change in the population or environmental factors that could affect this probability.
+
+#### Exercise 3
+
+Evaluate whether the assumptions for a Poisson distribution are satisfied.
+
+1. Within any interval, k may take on 1, 2, 3, ..., infinity.
+
+- This does not hold, since there are a fixed number of students in each school.
+
+2. Each event occurs independently, both within the same
+interval, and between intervals
+
+- Each case of measles should occur independently of the others. This means that one child developing measles should not directly influence whether another child in a different school district develops measles.
+
+3. The average rate at which events occur in an interval, λ, is
+constant
+
+- The number of events (measles cases) should be proportional to the size of the population or the area (e.g., the size of the school district).
+
+4. Two events cannot occur simultaneously
+
+This is true. The Poisson distribution assumes that events (in this case, children developing measles) occur one at a time, not in clusters. This means that the likelihood of multiple children developing measles in the exact same instant is very low.
+
+#### Exercise 4
+
+The mean (2) is significantly greater than the variance (0.09). This violates the assumption of the Poisson distribution, where the mean and variance should be approximately equal.
+
+It would not be appropriate to use a Poisson distribution to model the number of eggs laid by Adelie penguin breeding pairs because the key assumption that the mean equals the variance is violated. The variance is much smaller than the mean, suggesting that the data might be more consistent and less dispersed than what a Poisson distribution would predict.
+
+#### Exercise 5
+
+Write your answer to Exercise 5 here.
+
+#### Exercise 6
+
+Write your answer to Exercise 6 here.
+
+#### Exercise 7
+
+Write your answer to Exercise 7 here.
+
+#### Exercise 8
+
+Write your answer to Exercise 8 here.
+
+#### Exercise 9
+
+Write your answer to Exercise 9 here.
+
+#### Exercise 10
+
+Write your answer to Exercise 10 here.
