@@ -437,9 +437,10 @@ right side of the RStudio window.</p>
 <li><p>The environment contains all objects in the current working
 space. These objects could be variables, lists of variables, or even
 entire datasets.</p></li>
-<li><p>In the same location as the environment tab, the **history tab
-displays all commands used during the current session (don’t worry about
-the connections tab for now).</p></li>
+<li><p>In the same location as the environment tab, the
+<strong>history</strong> tab displays all commands used during the
+current session (don’t worry about the connections tab for
+now).</p></li>
 <li><p>Finally, the bottom half of the right-hand panel shows
 information regarding files on your hard drive, installed packages,
 output such as plots, and help files or other documents.</p></li>
@@ -473,30 +474,46 @@ support, so there is nothing additional to install.</p>
 Markdown, with a template provided for you to use. This lab’s template
 can be downloaded by typing in the following code:</p>
 <pre class="r"><code>download.file(&quot;https://karamccor.github.io/b6002/labs/lab-01-template.Rmd&quot;, destfile=&quot;lab-01.Rmd&quot;)</code></pre>
-<p>You should now see the new file <code>lab-01.qmd</code> under the
+<p>You should now see the new file <code>lab-01.Rmd</code> under the
 Files tab in the bottom-right hand side of your RStudio window. Click on
-<code>lab-01.qmd</code> in this window in order to open it up – it is
+<code>lab-01.Rmd</code> in this window in order to open it up – it is
 the template for use in this lab!</p>
-<p>First, put your name in the space at the top where it says “YOUR NAME
-GOES HERE”.</p>
-<p>Fill in answers in the spaces provided: text narrative should be
+</div>
+<div id="add-your-name-to-the-template" class="section level2">
+<h2>Add your name to the template</h2>
+<ul>
+<li>First, put your name in the space at the top where it says “YOUR
+NAME GOES HERE”.</li>
+</ul>
+</div>
+<div id="then-fill-in-your-answers" class="section level2">
+<h2>Then, fill in your answers</h2>
+<ul>
+<li>Fill in answers in the spaces provided: text narrative should be
 typed directly in the document and any included R code should be typed
 inside “chunks,” or sections defined by three backticks (the little mark
 on the same key as the tilde). See the template for more instructions,
-or ask your TA.</p>
+or ask your TA.</li>
+</ul>
 <p>An important thing to note is that the workspace of the RMarkdown
 document is separate from the console – this means that you must load
 any packages inside of R chunks if you want to use functions contained
 in them. In the template for this lab, this has been done already, but
 in the future you may have to do it yourself.</p>
+</div>
+<div id="ta-demo-how-to-turn-in-your-lab-assignments" class="section level2">
+<h2>TA Demo: How to turn in your lab assignments</h2>
 <p>In order to turn this template into a shareable document,
-<strong>Render</strong> the quarto template into an HTML document by
-pressing the Render button at the top of the document (it is a large
-blue arrow facing the right). You should see the template rendered as an
-.html file!</p>
+<strong>Knit</strong> the R Markdown into an HTML document by pressing
+the Knit button at the top of the document (look for the large blue yarn
+ball). You should see the template rendered as an .html file!</p>
+<p>Once you have your .html file, you can click “Open in Browser”. When
+you’re ready to submit, you should print your .html file as a PDF
+document (demo) and turn that in to Canvas.</p>
 </div>
 <div id="the-tidyverse" class="section level2">
 <h2>The tidyverse</h2>
+<p>Ok, back to the lab!</p>
 <ul>
 <li><p>As mentioned previously, one of the biggest strengths of R is its
 large userbase who have contributed user-written functions to R via
@@ -650,8 +667,6 @@ differences between the code examples provided.</p>
 <ul>
 <li>What is your guess for what each line of code does, given the
 graphs?</li>
-<li>What is the aesthetic mapping for each plot?</li>
-<li>What geometries are being plotted?</li>
 </ul>
 <pre class="r"><code>ggplot(data = cdc, mapping = aes(x = Region)) + 
   geom_bar(fill = &quot;steelblue&quot;) + 

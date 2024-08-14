@@ -1,0 +1,82 @@
+---
+title: Lab 01
+author: Solution
+date: "Due: Friday, August 23, 2024 at 11:59PM"
+output:
+  html_document
+---
+
+```{r data-and-packages, warning = F, message = F}
+
+# You may need to install the tidyverse packages, which you can do by running
+# the following line of code in the Console:
+
+# install.packages("tidyverse")
+
+library(tidyverse)
+
+cdc <- read.csv("https://karamccor.github.io/b6002/labs/data/cdc_cleaned.csv")
+```
+
+#### Exercise 1
+
+```{r}
+ggplot(data = cdc, mapping = aes(x = Exercise,y = Obesity,color = HDI, shape = HDI)) + 
+  geom_point()
+```
+
+For those in the Bottom ten HDI, more individuals tend to be obese, and these are also the states getting less adequate aerobic activity.
+
+
+#### Exercise 2
+
+```{r ex-2}
+ggplot(data = cdc, mapping = aes(x = Region)) + 
+  geom_bar(fill = "pink") + 
+  labs(title = "Number of US States by Census Region", 
+       x = "Region", y = "Count")
+```
+
+#### Exercise 3
+
+```{r ex-3}
+ggplot(data = cdc, aes(x = Smoking)) +
+  geom_histogram(color = "darkblue", fill = "lightblue", binwidth = 2)+ 
+  labs(title = "Distribution of Adult Smoking (%) by State", 
+       x = "Adult Smoking (%)", y = "Count")
+```
+
+It looks like most states have between 30-22% smokers in that state. Very few states have 10% smokers or below. 
+
+#### Exercise 4
+
+```{r ex-4}
+ggplot(data = cdc, mapping = aes(x = FluVaccination, y = ChildVaccination)) + 
+  geom_point() +
+  labs(title = "Flu Vaccination rate (%) vs. Child Vaccination rate (%)", 
+       x = "Flu Vaccination rate (%)", y = "Child Vaccination rate (%)")
+```
+
+There seems to be a slight increase in child vaccination rate as general flu vaccination rate increases.
+
+#### Exercise 5
+
+```{r ex-5}
+ggplot(data = cdc, mapping = aes(x = CVDeathRate, y = Obesity, color = HDI)) + 
+  geom_point() +
+  labs(title = "CV Death Rate (%) vs. Obesity by State HDI", 
+       x = "CV Death Rate (%)", y = "Obesity (%)")
+```
+
+States in the bottom ten HDI have the highest CV death rates and the highest obesity rates. In general, there is an upward trend between CV death rates and Obesity. 
+
+#### Exercise 6
+
+```{r ex-6}
+ggplot(data = cdc, mapping = aes(x = Smoking, y = Obesity, color = HDI)) + 
+  geom_point() +
+  labs(title = "Smoking rate (%) vs. Obesity by State HDI", 
+       x = "Smoking rate (%)", y = "Obesity (%)")
+```
+
+Similar to the previous plot, the smoking rate and obesity rate have a positive trend across states. Additionally, those states in the bototm ten HDI have the highest smoking rates and highest obesity rates.

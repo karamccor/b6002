@@ -72,7 +72,7 @@ We've just loaded a dataset named `cdc`. These data come primarily from the Sort
 
 -   The environment contains all objects in the current working space. These objects could be variables, lists of variables, or even entire datasets.
 
--   In the same location as the environment tab, the \*\*history tab displays all commands used during the current session (don't worry about the connections tab for now).
+-   In the same location as the environment tab, the **history** tab displays all commands used during the current session (don't worry about the connections tab for now).
 
 -   Finally, the bottom half of the right-hand panel shows information regarding files on your hard drive, installed packages, output such as plots, and help files or other documents.
 
@@ -96,11 +96,15 @@ Every homework assignment and lab in this class will be written in R Markdown, w
 download.file("https://karamccor.github.io/b6002/labs/lab-01-template.Rmd", destfile="lab-01.Rmd")
 ```
 
-You should now see the new file `lab-01.qmd` under the Files tab in the bottom-right hand side of your RStudio window. Click on `lab-01.qmd` in this window in order to open it up – it is the template for use in this lab!
+You should now see the new file `lab-01.Rmd` under the Files tab in the bottom-right hand side of your RStudio window. Click on `lab-01.Rmd` in this window in order to open it up – it is the template for use in this lab!
 
-First, put your name in the space at the top where it says "YOUR NAME GOES HERE".
+## Add your name to the template
 
-Fill in answers in the spaces provided: text narrative should be typed directly in the document and any included R code should be typed inside “chunks,” or sections defined by three backticks (the little mark on the same key as the tilde). See the template for more instructions, or ask your TA.
+- First, put your name in the space at the top where it says "YOUR NAME GOES HERE".
+
+## Then, fill in your answers
+
+- Fill in answers in the spaces provided: text narrative should be typed directly in the document and any included R code should be typed inside “chunks,” or sections defined by three backticks (the little mark on the same key as the tilde). See the template for more instructions, or ask your TA.
 
 An important thing to note is that the workspace of the RMarkdown document is separate from the console – this means that you must load any packages inside of R chunks if you want to use functions contained in them. In the template for this lab, this has been done already, but in the future you may have to do it yourself.
 
@@ -134,7 +138,6 @@ Remember that the console and the R Markdown document have different workspaces.
 
 ## Basic Data Manipulation
 
-### Exercise 1
 
 First, let’s take a `glimpse` of the dataset by running the following code **in the console**:
 
@@ -218,6 +221,13 @@ Again, how does this code differ from the previous plot, and what changes in the
 
 ## Exercise 1
 
+Run the following code in your console again:
+
+```{r echo = T, eval = F}
+ggplot(data = cdc, mapping = aes(x = Exercise,y = Obesity,color = HDI, shape = HDI)) + 
+  geom_point()
+```
+
 How does the HDI of a state relate to the percentage of residents in each state who get 2.5 hours of aerobic activity and who are obese?
 
 # Example Graphs
@@ -225,8 +235,6 @@ How does the HDI of a state relate to the percentage of residents in each state 
 This section contains the code used to produce the basic graphs in the course slides. Take a moment to examine the similarities and differences between the code examples provided.
 
 -   What is your guess for what each line of code does, given the graphs?
--   What is the aesthetic mapping for each plot?
--   What geometries are being plotted?
 
 ```{r echo = T}
 ggplot(data = cdc, mapping = aes(x = Region)) + 

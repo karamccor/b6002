@@ -62,4 +62,4 @@ Narrative for Exercise 5 goes here.
 Remember to knit your lab into an .html file and then save it as a .pdf in a 
 web browser.
 
-**Important:** You must turn in a .pdf file corresponding to the R Markdown template to Sakai in order to receive credit for the labs and homework assignments.
+**Important:** You must turn in a .pdf file corresponding to the R Markdown template to Canvas in order to receive credit for the labs and homework assignments.
