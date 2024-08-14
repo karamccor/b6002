@@ -6,6 +6,8 @@ output:
   html_document
 ---
 
+(2 points per question, total 12 points)
+
 ```{r data-and-packages, warning = F, message = F}
 
 # You may need to install the tidyverse packages, which you can do by running
