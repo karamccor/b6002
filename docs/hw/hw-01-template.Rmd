@@ -1,0 +1,55 @@
+---
+title: HW 01
+author: YOUR NAME GOES HERE
+date: "Due: Friday, September 6, 2024 at 11:59PM"
+output:
+  html_document
+---
+
+#### Exercise 1:
+
+Write your answer here
+
+#### Exercise 2:
+
+Write your answer here
+
+#### Exercise 3: 
+
+Write your answer here
+
+#### Exercise 4: 
+
+...and so on.
+
+#### Exercise 5: 
+
+#### Exercise 6: 
+
+#### Exercise 7: 
+
+#### Exercise 8: 
+
+#### Exercise 9: 
+
+#### Exercise 10:
+
+#### Exercise 11: 
+
+#### Exercise 12: 
+
+#### Exercise 13: 
+
+#### Exercise 14: 
+
+#### Exercise 15: 
+
+#### Exercise 16: 
+
+#### Exercise 17: 
+
+#### Exercise 18: 
+
+#### Exercise 19: 
+
+#### Exercise 20: 
