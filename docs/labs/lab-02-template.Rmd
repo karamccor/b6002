@@ -36,27 +36,28 @@ Write your narrative to Exercise 3 here.
 
 ### Exercise 4
 
-```{r ex3}
-# Use this R chunk to create your visualization for Exercise 3.
+```{r ex4}
+# Use this R chunk to create your visualization for Exercise 4.
 ```
 
-Write your narrative to Exercise 3 here.
+Write your narrative to Exercise 4 here.
 
 ### Exercise 5
 
 ```{r ex5}
-# Use this R chunk to create your visualization for Exercise 3.
+# Use this R chunk to create your visualization for Exercise 5.
 ```
 
-Write your narrative to Exercise 3 here.
+Write your narrative to Exercise 5 here.
 
 ### Exercise 6
 
 ```{r ex6}
-# Use this R chunk to create your visualization for Exercise 3.
+# Use this R chunk to create your visualization for Exercise 6.
 ```
 
-Write your narrative to Exercise 3 here.
+Write your narrative to Exercise 6 here.
+
 
 Remember to knit your lab into an .html file and then save it as a .pdf in a 
 web browser.
