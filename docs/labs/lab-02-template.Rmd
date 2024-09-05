@@ -11,7 +11,7 @@ library(tidyverse)
 # Load in the dataset in the R chunk here! Note that you MUST load in the dataset
 # in the chunk in order for other R chunks to recognize the dataset, even if
 # you've loaded it in the Console.
-
+cdc <- read.csv("https://karamccor.github.io/b6002/labs/data/cdc_cleaned.csv")
 ```
 
 ### Exercise 1
