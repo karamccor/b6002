@@ -1,0 +1,55 @@
+---
+title: HW 03
+author: YOUR NAME GOES HERE
+date: "Due: Wednesday, September 25 at 11:59PM"
+output:
+  html_document
+---
+
+#### Exercise 1
+
+Write your answer to Exercise 1 here. 
+
+- (A)
+
+- (B)
+
+- (C)
+
+- and so on...
+
+#### Exercise 2
+
+Write your answer to Exercise 2 here.
+
+#### Exercise 3
+
+Write your answer to Exercise 3 here.
+
+#### Exercise 4
+
+Write your answer to Exercise 4 here.
+
+#### Exercise 5
+
+Write your answer to Exercise 5 here.
+
+#### Exercise 6
+
+Write your answer to Exercise 6 here.
+
+#### Exercise 7
+
+Write your answer to Exercise 7 here.
+
+#### Exercise 8
+
+Write your answer to Exercise 8 here.
+
+#### Exercise 9
+
+Write your answer to Exercise 9 here.
+
+#### Exercise 10
+
+Write your answer to Exercise 10 here.
