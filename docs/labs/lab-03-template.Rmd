@@ -43,7 +43,7 @@ ncbikecrash <- read_csv("...")
 
 ...and so on. Be careful to have proper line spacing around exercises, and
 also be careful not to duplicate chunk names (your document won't knit if any
-exist). Insert R chunks and narrative answers as appropriate. Don't forget to
+exist). Insert R chunks and narrative answers as appropriate. Remember to
 show all work/code used for full credit.
 
 ### Exercise 6
@@ -51,5 +51,4 @@ show all work/code used for full credit.
 
 
 Remember to knit your lab into an .html file and then save it as a .pdf in a 
-web browser. Solutions will be posted to course resources (after a few days!) if
-you want to check your work.
+web browser. 
