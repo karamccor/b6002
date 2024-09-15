@@ -49,6 +49,9 @@ show all work/code used for full credit.
 ### Exercise 6
 
 
+### Exercise 7
+
+
 
 Remember to knit your lab into an .html file and then save it as a .pdf in a 
 web browser. 
