@@ -1,7 +1,7 @@
 ---
 title: HW 03
 author: YOUR NAME GOES HERE
-date: "Due: Wednesday, September 25 at 11:59PM"
+date: "Due: Monday, September 23 at 11:59PM"
 output:
   html_document
 ---
