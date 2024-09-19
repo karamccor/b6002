@@ -32,24 +32,29 @@ Write your answer to Exercise 4 here.
 
 #### Exercise 5
 
-Write your answer to Exercise 5 here.
+```{r ex-5}
+
+```
+
 
 #### Exercise 6
 
-Write your answer to Exercise 6 here.
+```{r ex-6}
+
+```
+
 
 #### Exercise 7
 
-Write your answer to Exercise 7 here.
+```{r ex-7}
+
+```
+
 
 #### Exercise 8
 
-Write your answer to Exercise 8 here.
+```{r ex-8}
 
-#### Exercise 9
+```
 
-Write your answer to Exercise 9 here.
 
-#### Exercise 10
-
-Write your answer to Exercise 10 here.
