@@ -1,0 +1,75 @@
+---
+title: Exam 01 Part 2
+author: YOUR NAME GOES HERE
+output:
+  html_document
+---
+
+```{r loading, warning = F, message = F}
+library(tidyverse)
+
+plastic <- read_csv("https://karamccor.github.io/b6002/exam/data/plastic_waste.csv")
+```
+
+### Question 1
+
+
+### Question 2
+
+
+### Question 3
+
+
+### Question 4
+
+
+### Question 5
+
+
+### Question 6
+
+
+### Question 7
+
+#### (a)
+
+```{r q7a}
+
+```
+
+#### (b)
+
+```{r q7b}
+
+```
+
+### Question 8
+
+```{r q8}
+
+```
+
+
+### Question 9
+
+```{r q9}
+
+```
+
+
+### Question 10
+
+```{r q10}
+
+```
+
+### Question 11
+
+
+## Honor Statement
+
+I have neither given nor received unauthorized aid on this exam. 
+
+(Please type your name below to indicate your agreement with the honor statement)
+
+Name:
