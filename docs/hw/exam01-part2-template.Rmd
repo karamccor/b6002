@@ -33,7 +33,7 @@ plastic <- read_csv("https://karamccor.github.io/b6002/exam/data/plastic_waste.c
 
 #### (a)
 
-```{r q7a}
+```{r q7a, warning = F, message = F}
 
 ```
 
@@ -45,14 +45,14 @@ plastic <- read_csv("https://karamccor.github.io/b6002/exam/data/plastic_waste.c
 
 ### Question 8
 
-```{r q8}
+```{r q8, warning = F}
 
 ```
 
 
 ### Question 9
 
-```{r q9}
+```{r q9, warning = F, message = F}
 
 ```
 
