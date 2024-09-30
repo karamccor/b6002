@@ -1,0 +1,54 @@
+---
+title: Lab 04
+author: YOUR NAME GOES HERE
+output:
+  html_document
+---
+
+Due: Friday, October 4, 11:59pm.
+
+Remember to load in any required packages and data. We'll do that in an
+initial chunk here (fill in the file path and required packages). Note the options for suppressing messages and warnings in the knitted document, which prevents a lot of  unnecessary text from appearing in your final .html page.
+
+### Exercise 1
+
+```{r loading, message = F, warning = F}
+# load library here
+
+# load in data here
+```
+
+### Exercise 2
+
+```{r ex-2}
+
+```
+
+### Exercise 3
+
+```{r ex-3}
+
+```
+
+### Exercise 4
+
+```{r ex-4}
+
+```
+
+### Exercise 5
+
+...and so on. Be careful to have proper line spacing around exercises, and
+also be careful not to duplicate chunk names (your document won't knit if any
+exist). Insert R chunks and narrative answers as appropriate. Remember to
+show all work/code used for full credit.
+
+### Exercise 6
+
+
+### Exercise 7
+
+
+
+Remember to knit your lab into an .html file and then save it as a .pdf in a 
+web browser. 
