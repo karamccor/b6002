@@ -1,0 +1,116 @@
+---
+title: "Lab 05: Coding Style"
+output: html_document
+---
+
+Name: YOUR NAME HERE
+
+### Exercise 1
+
+```{r ex-1, eval = F}
+
+# f2 is a function that finds a distance between points on two normal distributions that the user specifies.
+
+f2<-function(x,m1,m2,sd1,sd2){0.5*abs(dnorm(x,mean=m1,sd=sd1)-dnorm(x,mean=m2,sd=sd2)}
+
+```
+
+Taken from Wikipedia: Normal distributions are important in statistics and are often used in the natural and social sciences to represent real-valued random variables whose distributions are not known. Their importance is partly due to the central limit theorem. It states that, under some conditions, the average of many samples (observations) of a random variable with finite mean and variance is itself a random variable—whose distribution converges to a normal distribution as the number of samples increases. Therefore, physical quantities that are expected to be the sum of many independent processes, such as measurement errors, often have distributions that are nearly normal.
+
+### Exercise 2
+
+```{r ex-2, eval = F}
+
+ggplot( data=boot_dist,aes(x=boot_props))+geom_histogram(binwidth=0.01,color="darkblue",fill="skyblue" ) + 
+
+geom_vline( xintercept=c(ex_5_interval$lower,ex_5_interval$upper),color = "darkred",lwd=2 ) +
+
+labs( x="Bootstrap proportions",y="Count",title="Most Durham residents satisfied with parks and recreation",subtitle = "1,000 bootstrap replicates with 99% CI shown" )
+
+```
+
+### Exercise 3
+
+```{r ex-3, eval = F}
+
+# You may have noticed that ncbikecrash isn't a great dataset name. Give it a better name in the code chunk below. Make sure that everything in the chunk conforms to tidyverse style guidelines, including this comment!
+
+
+
+ncbikecrash %>% group_by(rural_urban) %>% count(ambulance_req) %>% 
+
+mutate(prubability_needing_ambulance_after_crash = n/sum(n))%>%filter(ambulance_req=="Yes")%>%select(rural_urban,prob)
+
+```
+
+### Exercise 4
+
+```{r ex-4, eval = F}
+
+set.seed(5)
+
+boot_dist<-numeric(1000) 
+
+ex_5_dat<-durham %>% filter(quality_parks_rec!=9)
+
+for(i in 1:1000){
+
+indices <- sample(1:nrow(ex_5_dat), replace = T)
+
+
+
+boot_prop<-ex_5_dat %>%
+
+slice(indices)%>%
+
+mutate(parks_satisfied = ifelse(quality_parks_rec > 3, 1, 0)) %>% 
+
+summarize(prop_parks = mean(parks_satisfied))%>%pull()
+
+  
+
+boot_dist[i] <- boot_prop}
+
+
+
+boot_dist <- tibble(boot_props=boot_dist)
+
+
+
+ex_5_interval <- boot_dist %>% summarize(lower=quantile(boot_props,0.005),upper=quantile(boot_props,0.995))%>%round(3)
+
+```
+
+### Exercise 5
+
+```{r ex-5, eval = F}
+
+the.week.of.the.month<-matrix(NA,nrow=length(seq(-5,5,by=0.1)),ncol=length(seq(0.10,5,by=0.01)))
+
+
+
+start<-Sys.time()
+
+for(i in 1:dim(temp)[1]){for(j in 1:dim(temp)[2]){
+
+MatrixforAlltheDaysintheMonth[i,j]<-HellingerDist(Norm(mean=0,sd=2), 
+
+Norm(mean=seq(-5,5,by=0.1)[i], 
+
+sd=seq(0.10,5,by=0.01)[j]))
+
+print(c(i,j))
+
+}}
+
+end <- Sys.time()
+
+
+
+x<-rep(seq(-5,5,by=0.1),each=dim(temp)[2])
+
+y<-rep(seq(0.10,5,by=0.01),dim(temp)[1])
+
+z<-c(t(temp))
+
+```
