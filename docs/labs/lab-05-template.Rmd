@@ -1,7 +1,8 @@
 ---
-title: "Lab 05: Coding Style"
+title: "Lab 05"
 output: html_document
 ---
+
 
 Name: YOUR NAME HERE
 
@@ -15,7 +16,6 @@ f2<-function(x,m1,m2,sd1,sd2){0.5*abs(dnorm(x,mean=m1,sd=sd1)-dnorm(x,mean=m2,sd
 
 ```
 
-Taken from Wikipedia: Normal distributions are important in statistics and are often used in the natural and social sciences to represent real-valued random variables whose distributions are not known. Their importance is partly due to the central limit theorem. It states that, under some conditions, the average of many samples (observations) of a random variable with finite mean and variance is itself a random variable—whose distribution converges to a normal distribution as the number of samples increases. Therefore, physical quantities that are expected to be the sum of many independent processes, such as measurement errors, often have distributions that are nearly normal.
 
 ### Exercise 2
 
